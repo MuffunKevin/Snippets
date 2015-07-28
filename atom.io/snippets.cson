@@ -1,0 +1,73 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+ '.text.xsl':
+   'if':
+     'prefix': 'xslif'
+     'body': """
+     <XSL:if test="$1">
+        $2
+     </XSL:if>"""
+
+    'attribute':
+      'prefix': 'xslattribute'
+      'body': """
+      <XSL:attribute name="$1">
+         $2
+      </XSL:attribute>"""
+
+    'valueof':
+     'prefix': 'xslvalueof'
+     'body': """<XSL:value-of select="${1}" />"""
+
+    'comment':
+      'prefix': 'xslcomment'
+      'body': """
+      <XSL:comment>
+          $1
+      </XSL:comment>"""
+
+     'short comment':
+       'prefix': 'xslshortcomment'
+       'body': """<XSL:comment />"""
+
+      'choose':
+        'prefix': 'xslchoose'
+        'body': """
+        <XSL:choose>
+            <XSL:when test="$1">
+                $2
+            </XSL:when>
+            <XSL:otherwise>
+                $3
+            </XSL:otherwise>
+        </XSL:choose>"""
+
+      'call template':
+        'prefix': 'xslcalltemplate'
+        'body': """
+        <XSL:call-template name="$1">
+            <XSL:with-param name="$2">$3</XSL:with-param>
+        </XSL:call-template>"""
+
+      'transalte':
+        'prefix': 'xsltranslate'
+        'body': """
+        <XSL:call-template name="getTranslation">
+            <XSL:with-param name="string">form.$1</XSL:with-param>
+        </XSL:call-template>"""
