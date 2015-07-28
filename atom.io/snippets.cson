@@ -65,7 +65,7 @@
             <XSL:with-param name="$2">$3</XSL:with-param>
         </XSL:call-template>"""
 
-      'transalte':
+      'translate':
         'prefix': 'xsltranslate'
         'body': """
         <XSL:call-template name="getTranslation">
