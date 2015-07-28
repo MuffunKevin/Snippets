@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<XSL:if test="${1}">
+    ${2}
+</XSL:if>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xslif</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,4 @@
+<snippet>
+    <content><![CDATA[<XSL:text>${1}</XSL:text>]]></content>
+    <tabTrigger>xsltext</tabTrigger>
+</snippet>

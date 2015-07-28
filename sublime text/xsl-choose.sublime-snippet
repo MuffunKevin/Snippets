@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<XSL:choose>
+    <XSL:when test="${1}">
+        ${2}
+    </XSL:when>
+    <XSL:otherwise>
+        ${3}
+    </XSL:otherwise>
+</XSL:choose>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>xslchoose</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
