@@ -71,3 +71,10 @@
         <XSL:call-template name="getTranslation">
             <XSL:with-param name="string">form.$1</XSL:with-param>
         </XSL:call-template>"""
+
+      'for each':
+        'prefix': 'xslforeach'
+        'body': """
+        <XSL:for-each select="$1">
+            $2
+        </XSL:for-each>"""
