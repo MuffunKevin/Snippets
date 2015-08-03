@@ -78,3 +78,19 @@
         <XSL:for-each select="$1">
             $2
         </XSL:for-each>"""
+
+      'button':
+        'prefix': 'button'
+        'body': """
+        <input type="button" class="inputbutton">
+            <XSL:attribute name="value">
+                <XSL:call-template name="getTranslation">
+                    <XSL:with-param name="string">$1</XSL:with-param>
+                </XSL:call-template>
+            </XSL:attribute>
+        </input>"""
+
+      'input':
+        'prefix': 'input'
+        'body': """
+        <input type="text" name="$1" value="$2" />"""
