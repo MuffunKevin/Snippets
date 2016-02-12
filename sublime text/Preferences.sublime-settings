@@ -1,0 +1,18 @@
+{
+	"color_scheme": "Packages/Themes/1337.tmTheme",
+	"ensure_newline_at_eof_on_save": false,
+	"font-size": "11",
+	"font_face": "consolas",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"CSS",
+		"Vintage"
+	],
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
